@@ -1,0 +1,64 @@
+@media (min-width: 390px) {
+  .daun-img { width: 350px; }
+
+  .aktor-prempuan,
+  .aktor-laki { width: 220px; }
+
+  .bg-container h1 { font-size: 2.8rem; }
+}
+@media (min-width: 768px) {
+  .daun-img { width: 420px; }
+
+  .bunga { width: 380px; }
+
+  .aktor-prempuan,
+  .aktor-laki { width: 280px; }
+
+  .aktor-prempuan { top: 62%; }
+  .aktor-laki { top: 65%; }
+
+  .bg-container h1 { font-size: 3.5rem; }
+  .bg-container h2 { font-size: 1.3rem; }
+
+  .gold h2 { font-size: 2.6rem; }
+
+  .namaprempuan,
+  .namalaki { font-size: 2.6rem; }
+
+  .menu-box { bottom: 55%; }
+}
+@media (min-width: 1024px) {
+  .bg-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .daun-img { width: 480px; }
+
+  .bunga { width: 420px; }
+
+  .aktor-prempuan,
+  .aktor-laki { width: 320px; }
+
+  .bg-container h1 { font-size: 4rem; }
+  .bg-container h2 { font-size: 1.4rem; }
+
+  .gold h2 { font-size: 3rem; }
+
+  .menu-box li a { font-size: 1.3rem; }
+}
+@media (min-width: 1440px) {
+  .daun-img { width: 550px; }
+
+  .bunga { width: 500px; }
+
+  .aktor-prempuan,
+  .aktor-laki { width: 360px; }
+
+  .bg-container h1 { font-size: 4.5rem; }
+
+  .gold h2 { font-size: 3.4rem; }
+
+  .namaprempuan,
+  .namalaki { font-size: 3.2rem; }
+}

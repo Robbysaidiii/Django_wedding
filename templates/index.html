@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/responsif.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animasi.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+  <div class="bg-container">
+    <!-- Bunga sudut -->
+    <img src="{{ bunga2 }}" class="bunga tl">
+    <img src="{{ bunga }}" class="bunga tr">
+    <img src="{{ bunga }}" class="bunga bl">
+    <img src="{{ bunga }}" class="bunga br">
+
+    <!-- Aktor -->
+    <img src="{{ aktor2 }}" alt="aktor laki" class="aktor-laki">
+    <img src="{{ aktor }}" alt="aktor perempuan" class="aktor-prempuan">
+
+    <!-- Daun (foreground) -->
+    <img src="{{ daun }}" alt="Daun" class="daun-img">
+
+    <!-- Teks -->
+    <h1>{{ heading }}</h1>
+    <h2>{{ text }}</h2>
+
+    <div class="gold">
+      <h2>{{ text2 }}</h2>
+    </div>
+    <div class="namaprempuan">{{ nama_prempuan }}</div>
+    <div class="namalaki">{{ nama_laki }}</div>
+
+    <!-- Menu -->
+    <ul class="menu-box">
+      <li>
+        <a href="/about/">Buka undangan</a>
+      </li>
+    </ul>
+
+  </div>
+</body>
+</html>
