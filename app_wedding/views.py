@@ -7,4 +7,4 @@ context = {
  }
 
 def about(request):
-    return render(request, 'app_Wedding/about.html', context)
+    return render(request, 'app_wedding/about.html', context)
