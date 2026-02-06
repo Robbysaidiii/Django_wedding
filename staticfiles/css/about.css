@@ -1,0 +1,133 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container-full{
+    background-color: rgb(202, 200, 197);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    touch-action: none;
+}
+.container-full svg{
+    position: absolute;
+    width: 100%;
+    height:100vh;
+    filter:sepia(20%);
+    /* opacity: 0.1; */
+
+}
+
+
+#music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    background: rgb(233, 227, 227);
+    font-size: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 99;
+}
+
+#music-btn.playing {
+    animation: spin 2s linear infinite;
+}
+
+.custom-container {
+    width: 70%;
+    max-width: 200px;
+    height: 20vh;
+    min-height: 250px;
+
+    margin: 250px auto;
+
+    border-radius: 50%;
+    overflow: hidden;      /* 🔑 KUNCI */
+    border: 5px solid rgb(187, 187, 210);
+}
+
+.oval-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* gambar ngikut oval */
+}
+
+
+.borderd {
+    position: relative;        /* 🔑 penting */
+    overflow: hidden;          /* biar bunga ga keluar */
+
+    border: 1px solid rgb(165, 33, 59);
+
+    background: 
+      url("/static/images/-14.jpg") center/cover no-repeat;
+
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    min-height: 95vh;
+    z-index: 21;
+}
+.borderd::before,
+.borderd::after {
+    content: "⋆˚✿˖°";
+    position: absolute;
+    top: -10%;
+    font-size: 28px;
+    opacity: 0.8;
+
+    animation: bungaJatuh linear infinite;
+}
+
+.borderd::before {
+    left: 20%;
+    animation-duration: 8s;
+}
+
+.borderd::after {
+    left: 70%;
+    animation-duration: 10s;
+    font-size: 22px;
+}
+.flower {
+    position: absolute;
+    top: -10%;
+    font-size: 26px;
+    animation: bungaJatuh 4s linear infinite;
+}
+
+.flower:nth-child(1) { left: 10%; animation-duration: 4s; }
+.flower:nth-child(2) { left: 40%; animation-duration: 1s; }
+.flower:nth-child(3) { left: 70%; animation-duration: 9s; }
+
+@keyframes bungaJatuh {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
